@@ -15,8 +15,8 @@ before_script:
 build-image:
   stage: build
   script:
-    - docker build -t diego11491/prueba-python:v1 .
-    - docker push diego11491/prueba-python:v1
+    - docker build -t diegoventura/prueba-python:v1 .
+    - docker push diegoventura/prueba-python:v1
 
 
 
