@@ -10,14 +10,13 @@ variables:
   DOCKER_DRIVER: overlay2
 
 before_script:
-  - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD"
+  - docker login -u "$DOCKER_USER" -p "$DOCKER_PASS"
 
 build-image:
   stage: build
   script:
-    - docker build -t $CI_REGISTRY_IMAGE:v1 .
-    - docker push $CI_REGISTRY_IMAGE:v1
-
+    - docker build -t diego11491/prueba-python:v1 .
+    - docker push diego11491/prueba-python:v1
 
 
 
