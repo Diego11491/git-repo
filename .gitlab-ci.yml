@@ -17,3 +17,7 @@ build-image:
   script:
     - docker build -t $CI_REGISTRY_IMAGE:v1 .
     - docker push $CI_REGISTRY_IMAGE:v1
+
+
+
+
